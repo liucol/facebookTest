@@ -9,7 +9,7 @@
     <meta property="og:title" content="Your Website Title" />
     <meta property="og:description" content="Your description" />
     <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
-    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <!-- <script src="https://connect.facebook.net/en_US/sdk.js"></script> -->
 
 </head>
 
@@ -29,11 +29,11 @@
 
 
 
-        FB.init({
-            appId: '1076256895710421',
-            xfbml: true,
-            version: 'v2.5'
-        })
+        // FB.init({
+        //     appId: '1076256895710421',
+        //     xfbml: true,
+        //     version: 'v2.5'
+        // })
 
         FB.Event.subscribe('edge.remove', function() {
             console.log("I don't like!");
