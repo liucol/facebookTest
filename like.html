@@ -4,11 +4,13 @@
     <title>Your Website Title</title>
     <!-- You can use open graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url" content="https://www.baidu.com" />
+    <meta property="og:url" content="https://business.facebook.com/%E4%BF%AE%E7%9C%9F%E9%AB%98%E6%89%8B-255069005097341/?business_id=838864612989165" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Your Website Title" />
     <meta property="og:description" content="Your description" />
     <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+
 </head>
 
 <body>
@@ -24,10 +26,25 @@
             js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
+
+
+        FB.init({
+            appId: '1076256895710421',
+            xfbml: true,
+            version: 'v2.5'
+        })
+
+        FB.Event.subscribe('edge.remove', function() {
+            console.log("I don't like!");
+        });
+        FB.Event.subscribe('edge.create', function() {
+            console.log("I like!");
+        });
     </script>
 
     <!-- Your like button code -->
-    <div class="fb-like" data-href="https://www.baidu.com" data-layout="standard" data-action="like" data-show-faces="true">
+    <div class="fb-like" data-href="https://business.facebook.com/%E4%BF%AE%E7%9C%9F%E9%AB%98%E6%89%8B-255069005097341/?business_id=838864612989165" data-layout="standard" data-action="like" data-show-faces="true">
     </div>
 
 </body>
